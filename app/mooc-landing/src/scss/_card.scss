@@ -1,0 +1,68 @@
+.card {
+    padding: 0 10px;
+    width: 100%;
+    position: relative;
+
+    img{
+        width: 100%;
+    }
+    &__content {
+        margin-top: -3px;
+        padding:20px;
+        background-color: white;
+        min-height: 140px;
+
+        h4 {
+            margin: 0;
+            font-size: $text--size-medium--small;
+            color: #282828;
+        }
+
+        p {
+            color: #595959;
+            font-size: $text--size-medium--small - 1;
+        }
+
+        span{
+            display: flex;
+            justify-content: flex-end;
+            font-size: $text--size-small;
+            color: #4a4a4a;
+            bottom: 20px;
+            right: 30px;
+            position: absolute;
+        }
+    }
+
+    &>div{
+        position: relative;
+        top: 0;
+        transition: all 0.5s;
+
+        &:hover {
+            box-shadow: 10px 10px 47px 0 #e0e0e0;
+            cursor: pointer;
+            top: -4px;
+            transition: all 0.5s;
+        }
+    }
+    @media (max-width: $tablet) {
+        margin-bottom: 5%;
+    }
+}
+
+.incoming{
+    background-color: #212121;
+    color: #FFF;
+    padding: 40px 20px;
+    margin: 0 0 0 10px;
+    text-align: center;
+    font-size: $text--size-medium--small;
+    width: 45%;
+    margin-bottom: 10%;
+
+    @media (max-width: $tablet) {
+        margin: 0 auto;
+        width: 80%;
+    }
+}

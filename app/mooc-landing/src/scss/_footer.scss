@@ -1,0 +1,41 @@
+.footer {
+    width: 100%;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px 0;
+
+    a:hover {
+        color: #000;
+        transition: all 0.5s;
+    }
+
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: 8px 0;
+    }
+
+    li {
+        font-size: $text--size-small;
+        color: #444;
+        list-style: none;
+        padding: 0 5px;
+
+        
+    }
+
+    span {
+        color: #818181;
+        margin: 8px 0;
+        padding-left: 40px;
+    }
+}

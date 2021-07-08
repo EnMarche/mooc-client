@@ -1,0 +1,50 @@
+@mixin dfcc() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin scrollbar() {
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $bg-black;
+        border-right-width: 0.25em;
+        border-left-width: 0.5em;
+    }
+
+    &::-webkit-scrollbar-track-piece {
+        background: transparent none;
+        border: solid 0.25em transparent;
+        border-right-width: 0.5em;
+        margin: 0.25em;
+    }
+
+    &::-webkit-scrollbar-track-piece:horizontal {
+        border-right-width: 0.25em;
+        border-bottom-width: 0.5em;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $scroll-bar-color;
+        border-radius: 5px;
+        border: solid 3px #2e2b3e;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
+@mixin btn {
+    font-family: $font-opensans;
+    padding: 25px 30px;
+    border-radius: 3px;
+    margin-top: 30px;
+    font-size: $text--size-default;
+    transition: all 0.5s;
+    cursor: pointer;
+    line-height: 1.5;
+}
